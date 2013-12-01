@@ -6,6 +6,8 @@
 
 #include "ICell.h"
 
+using namespace std;
+
 class IField
 {
 public:
