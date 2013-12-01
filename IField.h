@@ -2,11 +2,13 @@
 // также здесь учитывается направление клеток
 #pragma once
 
+#include <vector>
+
 #include "ICell.h"
 
-class IEvent
+class IField
 {
 public:
 	// Показывает, куда должна встать фишка, если игрок направляется в direction(>= расстоянию на кубике)
-	virtual ICell next(ICell direction, ICell current_unit_position) = 0;
+	virtual vector <ICell> possible_directions(ICell current_unit_position) = 0;
 };
