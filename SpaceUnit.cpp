@@ -5,7 +5,8 @@
 
 using namespace std;
 
-SpaceUnit::SpaceUnit(int spawn_id)
+SpaceUnit::SpaceUnit(int spawn_id): cell_id(spawn_id){}
+const int & SpaceUnit::get_coords() const
 {
-	unit_cell = &field->spawn_location(spawn_id);
+	return cell_id;
 }

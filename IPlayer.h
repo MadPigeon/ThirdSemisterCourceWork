@@ -11,6 +11,7 @@ class IPlayer
 	int player_ID;
 	string Name;
 public:
+	IPlayer();
 	IPlayer(int player_id, string name);
 	// Возвращает имя игрока
 	virtual const string & get_name() const;

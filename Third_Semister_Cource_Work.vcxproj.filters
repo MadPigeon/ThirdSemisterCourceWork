@@ -16,16 +16,10 @@
     <Filter Include="Заголовочные файлы\Interfaces">
       <UniqueIdentifier>{5783a980-bcef-4f82-b6b3-49972803bd7b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Заголовочные файлы\Cell">
-      <UniqueIdentifier>{70f8d37c-c488-4d9f-8d24-fd19b333bf58}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SpaceField.h">
       <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="SpaceCell.h">
-      <Filter>Заголовочные файлы\Cell</Filter>
     </ClInclude>
     <ClInclude Include="SpacePlayer.h">
       <Filter>Заголовочные файлы</Filter>
@@ -52,6 +46,9 @@
       <Filter>Заголовочные файлы\Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="SpaceGame.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceCell.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>

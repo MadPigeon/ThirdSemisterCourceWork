@@ -6,10 +6,8 @@
 
 class SpaceUnit: public IUnit
 {
-	SpaceCell *unit_cell;
-	SpaceField *field;
-	SpacePlayer *player;
-	vector <int> spawn_coords;
+	int cell_id;
 public:
 	SpaceUnit(int spawn_id);
+	const int & get_coords() const;
 };
