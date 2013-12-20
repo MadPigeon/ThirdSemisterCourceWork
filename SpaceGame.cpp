@@ -15,3 +15,8 @@ int SpaceGame::dice_throw()
 	point = 1+rand()%5;
 	return point;
 }
+
+IPlayer SpaceGame::get_player()
+{
+
+}

@@ -16,7 +16,6 @@ public:
 	SpaceCell();
 	SpaceCell(int id, int x, int y);
 	~SpaceCell();
-	void key_location();
 	int get_id();
 	vector <int> get_coords();
 	//Добавляет в move_id направления для хода
