@@ -2,6 +2,7 @@
 
 #include "IField.h"
 #include "SpaceCell.h"
+#include "SpaceEvent.h"
 
 class SpaceField: public IField
 {
@@ -12,6 +13,7 @@ class SpaceField: public IField
 	SpaceCell **cell;
 	vector <int> obstacle_id;
 	vector <int> labyrinth_id;
+	vector <int> events_id;
 	//Дает возможность перемещения между двумя клетками(вторая клетка выбирается в зависимости от направления)
 	void course_direction(SpaceCell &from, char direction);
 	//Возвращает направление, в котором будут связываться клетки
@@ -26,8 +28,12 @@ class SpaceField: public IField
 	void labyrinths_id();
 	//Добавляет напрвления возможного хода для клеток лабиринта
 	void labyrinth_directions();
+	void event_cell_list();
+	
 public:
 	SpaceField();
 	~SpaceField();
+	SpaceEvent key_location();
+	
 	SpaceCell spawn_location(int location);
 };

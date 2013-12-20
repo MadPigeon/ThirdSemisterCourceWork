@@ -197,3 +197,32 @@ SpaceCell SpaceField::spawn_location(int spawn_id)
 	int location_id [6]= {6,24,35,95,108,136};
 	return arr[location_id[spawn_id - 1]];
 }
+
+SpaceEvent SpaceField::key_location()
+{
+	vector <int> events = events_id;
+
+
+}
+
+void SpaceField::event_cell_list()
+{
+	events_id.push_back(1);
+	events_id.push_back(2);
+	events_id.push_back(10);
+	events_id.push_back(17);
+	events_id.push_back(45);
+	events_id.push_back(48);
+	events_id.push_back(81);
+	events_id.push_back(86);
+	events_id.push_back(106);
+	events_id.push_back(107);
+	events_id.push_back(130);
+	events_id.push_back(131);
+	events_id.push_back(142);
+	events_id.push_back(143);
+	events_id.push_back(132);
+	events_id.push_back(133);
+	events_id.push_back(138);
+	events_id.push_back(139);
+}

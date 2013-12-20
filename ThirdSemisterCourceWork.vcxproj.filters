@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Файлы исходного кода">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Заголовочные файлы\Interfaces">
+      <UniqueIdentifier>{80e482f8-3808-4379-ae20-818485a91792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\SpaceCell">
+      <UniqueIdentifier>{1bfb60b1-63ef-4032-9694-44678a703ff2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceCell.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceEvent.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceField.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceGame.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="SpacePlayer.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceUnit.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ICell.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IEvent.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IField.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IGame.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IPlayer.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IUnit.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceCell.h">
+      <Filter>Заголовочные файлы\SpaceCell</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceEvent.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceField.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceGame.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="SpacePlayer.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceUnit.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
