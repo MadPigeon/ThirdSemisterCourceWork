@@ -13,25 +13,63 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Заголовочные файлы\Interfaces">
+      <UniqueIdentifier>{d4c466f3-ad2f-4084-9292-7f451c761a61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\Classes">
+      <UniqueIdentifier>{5a310d0b-5610-45ff-8e3b-1eeb60949aa0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы исходного кода\Classes">
+      <UniqueIdentifier>{7ce9db65-2c0e-468f-8065-b924671344f2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IGame.h">
-      <Filter>Заголовочные файлы</Filter>
+    <ClInclude Include="ICell.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="IEvent.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="IPlayer.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="IUnit.h">
-      <Filter>Заголовочные файлы</Filter>
+      <Filter>Заголовочные файлы\Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="IField.h">
-      <Filter>Заголовочные файлы</Filter>
+      <Filter>Заголовочные файлы\Interfaces</Filter>
     </ClInclude>
-    <ClInclude Include="ICell.h">
-      <Filter>Заголовочные файлы</Filter>
+    <ClInclude Include="IGame.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
     </ClInclude>
+    <ClInclude Include="IPlayer.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IUnit.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="DogsCell.h">
+      <Filter>Заголовочные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DogsEvent.h">
+      <Filter>Заголовочные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DogsField.h">
+      <Filter>Заголовочные файлы\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="DogsPlayer.h">
+      <Filter>Заголовочные файлы\Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="DogsCell.cpp">
+      <Filter>Файлы исходного кода\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DogsField.cpp">
+      <Filter>Файлы исходного кода\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DogsGame.cpp">
+      <Filter>Файлы исходного кода\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DogsPlayer.cpp">
+      <Filter>Файлы исходного кода\Classes</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

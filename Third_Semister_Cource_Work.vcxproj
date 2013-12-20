@@ -76,12 +76,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="DogsCell.h" />
+    <ClInclude Include="DogsEvent.h" />
+    <ClInclude Include="DogsField.h" />
+    <ClInclude Include="DogsPlayer.h" />
     <ClInclude Include="ICell.h" />
     <ClInclude Include="IEvent.h" />
     <ClInclude Include="IField.h" />
     <ClInclude Include="IGame.h" />
     <ClInclude Include="IPlayer.h" />
     <ClInclude Include="IUnit.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DogsCell.cpp" />
+    <ClCompile Include="DogsField.cpp" />
+    <ClCompile Include="DogsGame.cpp" />
+    <ClCompile Include="DogsPlayer.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
