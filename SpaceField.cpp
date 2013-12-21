@@ -23,7 +23,7 @@ SpaceField::SpaceField()
 	char course;
 	for(i = 0; i < 12; i++)
 	{
-		for(j < 11; j = 0; j--)
+		for(j = 10; j >= 0; j--)
 		{
 			course = every_direction(direction_numb);
 			course_direction(cell[i][j],course);
@@ -39,7 +39,7 @@ SpaceField::SpaceField()
 		}
 	}
 	direction_numb = 3;
-	for(i < 11; i = 0; i--)
+	for(i = 10; i >= 0; i--)
 	{
 		for(j = 0; j < 12; j++)
 		{
@@ -58,6 +58,10 @@ SpaceField::SpaceField()
 	}
 	SpaceField::obstacles_id();
 	SpaceField::clear_direction_id();
+}
+SpaceField::~SpaceField()
+{
+	delete[] cell;
 }
 
 void SpaceField::course_direction(SpaceCell &from, char direction)
@@ -105,6 +109,7 @@ char SpaceField::every_direction(int direction_numb)
 	{
 		return 'r';
 	}
+	return 'z';
 }
 
 void SpaceField::obstacles_id()
@@ -153,7 +158,7 @@ void SpaceField::clear_direction_id()
 	for(int i = 0; i < obstacle_id_size; i++)
 	{
 		directions = arr[obstacle_id[i]].possible_directions();
-		for(int j = 0; j < directions.size(); j++ )
+		for(unsigned int j = 0; j < directions.size(); j++ )
 		{
 			arr[directions[j]].del_direction(obstacle_id[i]);
 		}
@@ -198,11 +203,19 @@ SpaceCell SpaceField::spawn_location(int spawn_id)
 	return arr[location_id[spawn_id - 1]];
 }
 
-SpaceEvent SpaceField::key_location()
+void SpaceField::key_location(int unit_id)
 {
-	vector <int> events = events_id;
-
-
+	switch(unit_id)
+	{
+		case 1 ://Police
+			break;
+		case 2 ://Police
+			break;
+		case 10: //buy animal cages
+			break;
+		case 17: //get registration
+			break; 
+	}
 }
 
 void SpaceField::event_cell_list()
@@ -225,4 +238,16 @@ void SpaceField::event_cell_list()
 	events_id.push_back(133);
 	events_id.push_back(138);
 	events_id.push_back(139);
+}
+
+vector <SpaceCell > SpaceField::possible_directions(SpaceCell current_position)
+{
+	vector <SpaceCell > result;
+	vector <int> transform = current_position.possible_directions();
+	int transform_size = transform.size();
+	for (int i = 0; i < transform_size; i++)
+	{
+		result.push_back(arr[transform[i]]);
+	}
+	return result;
 }

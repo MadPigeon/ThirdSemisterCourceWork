@@ -1,8 +1,10 @@
 #pragma once
-
+#include <iostream>
 #include "IField.h"
 #include "SpaceCell.h"
 #include "SpaceEvent.h"
+#include "SpacePlayer.h"
+using namespace std;
 
 class SpaceField: public IField
 {
@@ -11,6 +13,7 @@ class SpaceField: public IField
 	SpaceCell *arr;
 	//Массив клеток обозначенных с помощью координат
 	SpaceCell **cell;
+	SpaceEvent event_obj;
 	vector <int> obstacle_id;
 	vector <int> labyrinth_id;
 	vector <int> events_id;
@@ -33,7 +36,8 @@ class SpaceField: public IField
 public:
 	SpaceField();
 	~SpaceField();
-	SpaceEvent key_location();
+	void key_location(int unit_id);
+	vector <SpaceCell > possible_directions(SpaceCell current_unit_position);
 	
 	SpaceCell spawn_location(int location);
 };

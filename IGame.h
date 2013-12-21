@@ -8,7 +8,7 @@ class IGame
 {
 public:
 	// ѕоказывает, какой игрок ходит
-	virtual IPlayer get_player() = 0;
+	virtual IPlayer *get_player() = 0;
 	// Ѕросок кости, производимый игроком
 	virtual IEvent* move() = 0;
 	// ћожно ли ходить(нужно ли просить пользовател€ бросить кубик в начале хода)

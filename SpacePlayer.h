@@ -1,11 +1,10 @@
 #pragma once
 #include "IPlayer.h"
 #include "SpaceUnit.h"
-#include "SpaceGame.h"
 #include "IEvent.h"
 using namespace std;
 
-class SpacePlayer: public IPlayer
+class SpacePlayer//: public IPlayer
 {
 	string _name;
 	int _id,// идентификационный номер игрока

@@ -1,18 +1,12 @@
 #pragma once
-#include "SpaceField.h"
 #include "IEvent.h"
-#include "SpacePlayer.h"
-#include "SpaceGame.h"
 
-#include <iostream>
-using namespace std;
-
-class SpaceEvent
+class SpaceEvent//: public IEvent
 {
-	SpacePlayer *player;
+	int action_type;
 public:
-	IEvent & get_action();
-	SpaceEvent buy_car();
-	bool get_registation();
-	
+	SpaceEvent();
+	SpaceEvent(int action_type);
+	//const IEvent & get_action() const;
+	void execute();
 };

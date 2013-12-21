@@ -16,9 +16,6 @@
     <Filter Include="Заголовочные файлы\Interfaces">
       <UniqueIdentifier>{80e482f8-3808-4379-ae20-818485a91792}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Заголовочные файлы\SpaceCell">
-      <UniqueIdentifier>{1bfb60b1-63ef-4032-9694-44678a703ff2}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -62,9 +59,6 @@
     <ClInclude Include="IUnit.h">
       <Filter>Заголовочные файлы\Interfaces</Filter>
     </ClInclude>
-    <ClInclude Include="SpaceCell.h">
-      <Filter>Заголовочные файлы\SpaceCell</Filter>
-    </ClInclude>
     <ClInclude Include="SpaceEvent.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
@@ -78,6 +72,9 @@
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
     <ClInclude Include="SpaceUnit.h">
+      <Filter>Заголовочные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceCell.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>

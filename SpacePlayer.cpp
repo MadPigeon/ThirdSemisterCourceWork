@@ -27,10 +27,12 @@ void SpacePlayer::add_provision(int to_add)
 		/*вы переноситесь в больницу с голодным обмороком, Event*/		
 	}
 }
+
 void SpacePlayer::set_registration(bool val){ registration = val;}
 void SpacePlayer::set_quarantine_card(bool val){ quarantine = val;}
-void SpacePlayer::set_license(bool val){ license= val;}
-void SpacePlayer::set_car(bool val){ car= val;}
+void SpacePlayer::set_license(bool val){ license = val;}
+void SpacePlayer::set_car(bool val){ car = val;}
+
 const int & SpacePlayer::get_credits() const {return credits;}
 const bool & SpacePlayer::has_license() const {return license;}
 const bool & SpacePlayer::has_quarantine_card() const {return quarantine;}
