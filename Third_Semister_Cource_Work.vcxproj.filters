@@ -13,25 +13,78 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Заголовочные файлы\Interfaces">
+      <UniqueIdentifier>{59142449-059f-49a3-8898-77d4dc910c56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Заголовочные файлы\Monopoly">
+      <UniqueIdentifier>{5b7b0dc7-ba99-4321-9642-5bcd4aa59e07}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="IGame.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="IEvent.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="IPlayer.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="IUnit.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="IField.h">
-      <Filter>Заголовочные файлы</Filter>
+    <ClInclude Include="Dice.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
     </ClInclude>
     <ClInclude Include="ICell.h">
-      <Filter>Заголовочные файлы</Filter>
+      <Filter>Заголовочные файлы\Interfaces</Filter>
     </ClInclude>
+    <ClInclude Include="IEvent.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IField.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IGame.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IPlayer.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IUnit.h">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="MEvent.h">
+      <Filter>Заголовочные файлы\Monopoly</Filter>
+    </ClInclude>
+    <ClInclude Include="Monopoly.h">
+      <Filter>Заголовочные файлы\Monopoly</Filter>
+    </ClInclude>
+    <ClInclude Include="MPlayer.h">
+      <Filter>Заголовочные файлы\Monopoly</Filter>
+    </ClInclude>
+    <ClInclude Include="MField.h">
+      <Filter>Заголовочные файлы\Monopoly</Filter>
+    </ClInclude>
+    <ClInclude Include="MCell.h">
+      <Filter>Заголовочные файлы\Monopoly</Filter>
+    </ClInclude>
+    <ClInclude Include="MUnit.h">
+      <Filter>Заголовочные файлы\Monopoly</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dice.cpp">
+      <Filter>Заголовочные файлы\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Файлы ресурсов</Filter>
+    </ClCompile>
+    <ClCompile Include="MCell.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="MEvent.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="MField.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="Monopoly.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="MPlayer.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
+    <ClCompile Include="MUnit.cpp">
+      <Filter>Файлы исходного кода</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

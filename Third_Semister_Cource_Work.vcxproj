@@ -83,9 +83,22 @@
     <ClInclude Include="IGame.h" />
     <ClInclude Include="IPlayer.h" />
     <ClInclude Include="IUnit.h" />
+    <ClInclude Include="MCell.h" />
+    <ClInclude Include="MEvent.h" />
+    <ClInclude Include="MField.h" />
+    <ClInclude Include="Monopoly.h" />
+    <ClInclude Include="MPlayer.h" />
+    <ClInclude Include="MUnit.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dice.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MCell.cpp" />
+    <ClCompile Include="MEvent.cpp" />
+    <ClCompile Include="MField.cpp" />
+    <ClCompile Include="Monopoly.cpp" />
+    <ClCompile Include="MPlayer.cpp" />
+    <ClCompile Include="MUnit.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
