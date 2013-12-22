@@ -11,21 +11,18 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{A4EC3FA0-1C76-4F16-9955-1104E0DC3391}</ProjectGuid>
-    <Keyword>Win32Proj</Keyword>
-    <RootNamespace>Third_Semister_Cource_Work</RootNamespace>
+    <ProjectGuid>{540F3904-2062-42C8-8868-4D8062666AB1}</ProjectGuid>
+    <RootNamespace>курсоваяооп</RootNamespace>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -39,53 +36,55 @@
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <LinkIncremental>true</LinkIncremental>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LinkIncremental>false</LinkIncremental>
-  </PropertyGroup>
+  <PropertyGroup />
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Dice.h" />
     <ClInclude Include="ICell.h" />
     <ClInclude Include="IEvent.h" />
     <ClInclude Include="IField.h" />
     <ClInclude Include="IGame.h" />
     <ClInclude Include="IPlayer.h" />
     <ClInclude Include="IUnit.h" />
+    <ClInclude Include="TableCell.h" />
+    <ClInclude Include="TableEvent.h" />
+    <ClInclude Include="TableField.h" />
+    <ClInclude Include="TablePlayer.h" />
+    <ClInclude Include="TableGame.h" />
+    <ClInclude Include="TableUnit.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Dice.cpp" />
+    <ClInclude Include="Dice.h">
+      <FileType>CppCode</FileType>
+    </ClInclude>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="TableCell.cpp" />
+    <ClCompile Include="TableEvent.cpp" />
+    <ClCompile Include="TableField.cpp" />
+    <ClCompile Include="TableGame.cpp" />
+    <ClCompile Include="TablePlayer.cpp" />
+    <ClCompile Include="TableUnit.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

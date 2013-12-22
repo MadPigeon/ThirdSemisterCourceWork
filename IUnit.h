@@ -5,5 +5,5 @@
 
 class IUnit
 {
-	virtual const ICell get_coords() = 0;
+	virtual const ICell & get_coords() = 0;
 };
