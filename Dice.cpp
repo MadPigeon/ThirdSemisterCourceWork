@@ -12,7 +12,7 @@ void Dice::make_throw()
 	srand(abs(time(0)));
 	for (int i = 0; i < amount; i++)
 	{
-		dices[i] = rand()%6 + 1;
+		dices.push_back(rand()%6+1);
 	}
 }
 bool Dice::equal()
